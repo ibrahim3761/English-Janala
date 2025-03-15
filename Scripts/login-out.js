@@ -17,11 +17,11 @@ function login(){
         });
         document.getElementById('banner').classList.add('hidden');
         Swal.fire({
-            title: "অভিনন্দন",  // "Congratulations" in Bengali
-            text: "চলুন আজ নতুন কিছু শেখা যাক",  // "Let's learn something new today"
+            title: "অভিনন্দন",
+            text: "চলুন আজ নতুন কিছু শেখা যাক",  
             icon: "success",
             confirmButtonText: "OK",
-            confirmButtonColor: "#7A67EE", // Adjusted to match the button color
+            confirmButtonColor: "#7A67EE", 
             allowOutsideClick: false,
             allowEscapeKey: false
         });
