@@ -50,11 +50,15 @@
       .hs {
         font-family: "Hind Siliguri", sans-serif;
       }
+      .active{
+        background-color: #422AD5;
+        color: white;
+      }
     </style>
 
   </head>
   <body class="">
-    <header class="//hidden//">
+    <header class="hidden">
       <div
         class="fixed z-10 navbar bg-base-100 py-4 px-4 lg:px-8 bg-gradient-to-r from-white to-transparent shadow-md opacity-90"
       >
@@ -144,7 +148,7 @@
               <input
                 id="pass"
                 type="password"
-                placeholder="Enter your password (123454)"
+                placeholder="Enter your password (123456)"
                 class="input"
               />
               <div>
@@ -160,7 +164,7 @@
       </section>
 
       <!-- Let's Learn Vocabularies -->
-      <section id="llv" class="flex flex-col gap-8 mt-10 pt-20//hidden//">
+      <section id="llv" class="flex flex-col gap-8 mt-10 pt-20 hidden">
 
         <div class="flex flex-col gap-4 items-center">
           <h1 class="font-bold text-4xl">
@@ -170,6 +174,10 @@
   
           </div>
         </div>
+
+        <section id="loader" class="text-center py-10 hidden">
+          <span class="loading loading-dots loading-xl"></span>
+        </section>
 
         <div id="lesson-container" class="grid grid-cols-3 p-4 gap-4 w-full inter rounded-lg bg-[#F8F8F8]">
           <div class=" col-span-full flex flex-col gap-4 justify-center items-center text-center py-10">
@@ -181,7 +189,7 @@
       </section>
 
       <!-- faq -->
-      <section id="faq" class="flex flex-col gap-16 mt-10 pt-24 //hidden//">
+      <section id="faq" class="flex flex-col gap-16 mt-10 pt-24 hidden">
         <div class="flex justify-center items-center">
           <h1 class="font-bold text-4xl">
             <span class="text-[#00BCFF]">Frequently</span> Asked Questions
@@ -289,7 +297,23 @@
       </div>
     </footer>
 
-    <!-- <script src="Scripts/login-out.js"></script> -->
+
+    <dialog id="lesson_details" class="modal">
+      <div class="modal-box">
+        <div id="details-container">
+
+        </div>
+        <div class="modal-action justify-start">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="bg-indigo-700 hover:bg-indigo-800 text-white font-medium py-2 px-6 rounded-md transition duration-200">
+              Complete Learning
+          </button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+    <script src="Scripts/login-out.js"></script>
     <script src="Scripts/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>

@@ -14,7 +14,9 @@ function login(){
         document.querySelectorAll('.hidden').forEach(e=> {
             e.classList.remove('hidden');
             e.classList.add('block');
+            
         });
+        document.getElementById('loader').classList.add('hidden');
         document.getElementById('banner').classList.add('hidden');
         Swal.fire({
             title: "অভিনন্দন",
