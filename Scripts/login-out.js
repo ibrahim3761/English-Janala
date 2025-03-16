@@ -38,5 +38,5 @@ function logout(){
     const banner = document.getElementById('banner');
 
     banner.classList.remove('hidden');
-
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }

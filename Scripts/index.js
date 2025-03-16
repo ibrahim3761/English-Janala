@@ -123,10 +123,10 @@ function displayLessonDetails(lesson){
         </div>
         ${synonyms.length > 0 ? `
             
-            <div class="flex flex-wrap gap-2">
-                ${synonyms.map(word => `<span class="bg-blue-50 text-blue-800 px-4 py-1 rounded-md text-sm">${word}</span>`).join("")}
-            </div>
-            ` : ""}
+        <div class="flex flex-wrap gap-2">
+            ${synonyms.map(word => `<span class="bg-blue-50 text-blue-800 px-4 py-1 rounded-md text-sm">${word}</span>`).join("")}
+        </div>
+        ` : ""}
     </div>
     `
 }
