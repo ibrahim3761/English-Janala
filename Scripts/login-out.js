@@ -18,6 +18,7 @@ function login(){
         });
         document.getElementById('loader').classList.add('hidden');
         document.getElementById('banner').classList.add('hidden');
+        document.getElementById('nav').classList.add('hidden');
         Swal.fire({
             title: "অভিনন্দন",
             text: "চলুন আজ নতুন কিছু শেখা যাক",  

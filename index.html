@@ -93,13 +93,13 @@
               </li>
               <li>
                 <a
-                  href="#learn"
+                  href="#llv"
                   class="btn text-primary border-2 border-primary hover:bg-primary hover:text-white bg-white font-bold"
                   ><i class="fa-solid fa-book-open"></i> Learn</a
                 >
               </li>
               <li>
-                <a
+                <a onclick="logout()"
                   class="btn text-primary border-2 border-primary hover:bg-primary hover:text-white bg-white font-bold"
                   ><i class="fa-solid fa-arrow-right-from-bracket"></i>
                   Logout</a
@@ -107,11 +107,11 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="pl-4">
             <a href="#"><h1 class="flex justify-center items-center"><span class="font-semibold">English</span><img src="assets/logo.png" alt=""><span class="hs">জানালা</span></h1></a>
           </div>
         </div>
-        <div class="hidden md:flex navbar-end gap-5">
+        <div id="nav" class="hidden md:flex navbar-end gap-5">
           <a href="#faq"><button class="btn btn-outline border-[#422AD5] hover:bg-[#422AD5] hover:text-white text-[#422AD5]"><i class="fa-solid fa-circle-question"></i> FAQ</button></a>
           <a href="#llv"><button class="btn btn-outline border-[#422AD5] hover:bg-[#422AD5] hover:text-white text-[#422AD5]"><i class="fa-solid fa-book-open"></i> Learn</button></a>
           <button onclick="logout()" id="logout-btn" class="btn btn-outline border-[#422AD5] hover:bg-[#422AD5] hover:text-white text-[#422AD5]"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
@@ -128,14 +128,14 @@
       </div>
     </nav> -->
 
-    <main class="px-8 pt-8">
+    <main class="px-4 lg:px-8 pt-8">
       <!-- banner -->
-      <section id="banner" class="flex justify-between items-center">
-        <div class="flex flex-col gap-4 w-[750px]">
-          <h1 class="font-bold text-6xl">
+      <section id="banner" class="flex flex-col lg:flex-row justify-between items-center">
+        <div class="flex flex-col gap-4 lg:w-[750px]">
+          <h1 class="font-bold text-4xl lg:text-6xl">
             <span class="text-[#00BCFF]">English</span> is Easy!!
           </h1>
-          <p class="text-2xl hs">
+          <p class="text-lg lg:text-2xl hs">
             আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
             আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
             অন্য একটি Level এ
@@ -170,7 +170,7 @@
           <h1 class="font-bold text-4xl">
             <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
           </h1>
-          <div id="lessonbtn-container" class="flex gap-4 mt-4">
+          <div id="lessonbtn-container" class="grid grid-cols-2 lg:grid-cols-7 gap-4 mt-4">
   
           </div>
         </div>
@@ -179,7 +179,7 @@
           <span class="loading loading-dots loading-xl"></span>
         </section>
 
-        <div id="lesson-container" class="grid grid-cols-3 p-4 gap-4 w-full inter rounded-lg bg-[#F8F8F8]">
+        <div id="lesson-container" class="grid grid-cols-1 lg:grid-cols-3 p-4 gap-4 w-full inter rounded-lg bg-[#F8F8F8]">
           <div class=" col-span-full flex flex-col gap-4 justify-center items-center text-center py-10">
             <p class="hs text-sm text-[#79716B]">আপনি এখনো কোন Lesson Select করেন নি।</p>
             <h2 class="hs text-4xl font-bold pt-3">একটি Lesson Select করুন।</h2>
@@ -189,9 +189,9 @@
       </section>
 
       <!-- faq -->
-      <section id="faq" class="flex flex-col gap-16 mt-10 pt-24 hidden">
+      <section id="faq" class="flex flex-col gap-4 lg:gap-16 mt-10 pt-24 hidden">
         <div class="flex justify-center items-center">
-          <h1 class="font-bold text-4xl">
+          <h1 class="font-bold text-xl lg:text-4xl">
             <span class="text-[#00BCFF]">Frequently</span> Asked Questions
           </h1>
         </div>
@@ -200,10 +200,10 @@
             class="collapse collapse-plus bg-[#F8F8F8] border border-base-300"
           >
             <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title text-xl font-semibold">
+            <div class="collapse-title text-lg lg:text-xl font-semibold">
               The difference between var, let, and const
             </div>
-            <div class="collapse-content text-lg">
+            <div class="collapse-content text-sm lg:text-lg">
               var is function-scoped and redeclarable, let is block-scoped and
               reassignable, const is block-scoped and immutable.
             </div>
@@ -213,10 +213,10 @@
             class="collapse collapse-plus bg-[#F8F8F8] border border-base-300"
           >
             <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title text-xl font-semibold">
+            <div class="collapse-title text-lg lg:text-xl font-semibold">
               The difference between map(), forEach(), and filter()
             </div>
-            <div class="collapse-content text-lg">
+            <div class="collapse-content text-sm lg:text-lg">
               map() transforms and returns a new array, forEach() iterates
               without returning a value, and filter() returns a new array with
               elements that pass a condition.
@@ -227,11 +227,11 @@
             class="collapse collapse-plus bg-[#F8F8F8] border border-base-300"
           >
             <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title text-xl font-semibold">
+            <div class="collapse-title text-lg lg:text-xl font-semibold">
               Explain arrow functions and how they are different from regular
               functions
             </div>
-            <div class="collapse-content text-lg">
+            <div class="collapse-content text-sm lg:text-lg">
               Arrow functions provide a concise syntax and inherit this from the
               surrounding scope, whereas regular functions have their own this
               context.
@@ -242,10 +242,10 @@
             class="collapse collapse-plus bg-[#F8F8F8] border border-base-300"
           >
             <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title text-xl font-semibold">
+            <div class="collapse-title text-lg lg:text-xl font-semibold">
               How JavaScript Promises work
             </div>
-            <div class="collapse-content text-lg">
+            <div class="collapse-content text-sm lg:text-lg">
               JavaScript Promises represent an operation that will complete in
               the future, allowing handling of success with .then() and errors
               with .catch().
@@ -256,10 +256,10 @@
             class="collapse collapse-plus bg-[#F8F8F8] border border-base-300"
           >
             <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title text-xl font-semibold">
+            <div class="collapse-title text-lg lg:text-xl font-semibold">
               How closures work in JavaScript
             </div>
-            <div class="collapse-content text-lg">
+            <div class="collapse-content text-sm lg:text-lg">
               Closures in JavaScript occur when a function retains access to its
               lexical scope (variables from its outer function) even after the
               outer function has finished executing.
@@ -270,7 +270,7 @@
     </main>
 
     <footer class="px-8 py-14 border-t border-[#FFEBEB] mt-24">
-      <div class="flex justify-between">
+      <div class="flex flex-col lg:flex-row justify-between">
         <div class="">
           <a href="#"><h1 class="flex items-center">
             <span class="font-semibold">English</span
@@ -280,9 +280,9 @@
           <p class="hs">Providing ED-Tech Applications since 2025</p>
         </div>
 
-        <div class="flex flex-col gap-2 justify-end">
+        <div class="flex flex-col pt-2 lg:pt-0 gap-2 lg:justify-end">
           <p class="font-semibold text-[#18181B] opacity-50">Follow us</p>
-          <div class="flex gap-2 justify-center items-center">
+          <div class="flex gap-2 lg:justify-center items-center">
             <a href="https://www.facebook.com/Ibrahim376146ab/" target="_blank"
               ><img src="assets/fb-thumb.png" alt=""
             /></a>
