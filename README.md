@@ -13,6 +13,7 @@ CSS
 JavaScript
 
 📄 Features
+
 📚 Clean and responsive design
 
 🌐 Easy navigation for learners
