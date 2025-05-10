@@ -5,14 +5,15 @@ English Janala is a responsive educational website designed to make learning Eng
 Check out the live site here:
 [English Janala - Make English Easy](https://english-janala-make-english-easy.netlify.app/)
 
-🛠️ Technologies Used
+🛠️ Technologies Used:
+
 HTML
 
 CSS
 
 JavaScript
 
-📄 Features
+📄 Features:
 
 📚 Clean and responsive design
 
