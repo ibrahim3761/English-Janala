@@ -23,13 +23,14 @@ JavaScript
 
 💡 Beginner-friendly project structure
 
+---
 🧑‍💻 How to Run It on Your Local Machine:
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/english-janala.git
    cd english-janala
-   ```
+
 Or simply download the ZIP and extract it.
 
 2. Open in Your Code Editor
@@ -43,3 +44,5 @@ Or simply download the ZIP and extract it.
    OR
 
    Use Live Server extension in VS Code for a better development experience.
+
+---
