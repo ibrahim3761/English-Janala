@@ -22,3 +22,24 @@ JavaScript
 📝 Sections for lessons, tips, and resources
 
 💡 Beginner-friendly project structure
+
+🧑‍💻 How to Run It on Your Local Machine:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/english-janala.git
+   cd english-janala
+   ```
+Or simply download the ZIP and extract it.
+
+2. Open in Your Code Editor
+   You can use any editor like VS Code.
+
+3. Open index.html in a Browser
+   No build tools or servers required. Just open the file directly:
+
+   Right-click on index.html → "Open with" → choose your browser
+
+   OR
+
+   Use Live Server extension in VS Code for a better development experience.
